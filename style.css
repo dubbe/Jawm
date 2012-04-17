@@ -1,0 +1,433 @@
+/*
+ *  Grundinställningar för hela sidan
+ *  
+ * 
+ */
+ 
+body {
+	background: #000 ;
+ 	font-family: Verdana, Verdana, Geneva, Arial, Helvetica, sans-serif ;
+}
+
+/*
+ *  CSS för background (DUBBE.jawm.wm.background)
+ */
+
+#background {
+	width: 1024px ;
+	height: 640px ;
+	background: url("appPics/bg.jpg") ; 
+	overflow: hidden ;
+
+}
+.logo {
+	position: absolute ;
+	top: 15px ;
+	left: 15px ;
+	z-index: 0 ;
+}
+/*
+ * CSS för docka
+ */
+
+.dock {
+	position: absolute ;
+	height: 50px ;
+	left: 0px ;
+	right: 0px ;
+	bottom: 0px ;
+	background: #fff ;
+	background: url("appPics/dockBg.png") ;
+}
+
+
+/*
+ *  CSS för ikoner (DUBBE.jawm.wm.icon)
+ */
+.icon {
+	float: left ;
+	margin: 7px 5px ;
+}
+.iconImg {
+	position: relative ;
+	height: 42px ;
+	border: 0px ;
+}
+/*
+ * CSS för tooltip
+ */
+.tooltip {
+	background: #000 ;
+	color: #fff ;
+	font-size: 10px ;
+	font-weight: bold ;
+	position: absolute ;
+	padding: 5px ;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+/*
+ *  CSS för fönster (DUBBE.jawm.wm.window)
+ */
+
+.windowBase {
+	position: absolute ;
+	margin: 0px ;
+	padding: 0px ;
+}
+.windowTop {
+	background: url("appPics/top.png") ;
+	position: absolute ;
+	height: 27px ;
+	top: 0px ;
+	left: 0px ;
+	right: 10px ;
+}
+.windowTopRight {
+	background: url("appPics/topRight.png") ;
+	position: absolute ;
+	top: 0px ;
+	right: 0px ;
+	height: 27px ;
+	width: 10px ;
+}
+.windowTopIcon {
+	margin-top: 6px ;
+	margin-left: 10px ;
+	height: 15px ;
+}
+.windowTopClose {
+	margin-top: 6px ;
+	float: right ;
+	border: none ;
+}
+.windowTopText {
+	font-size: 10px ;
+	color: #fff ;
+	font-weight: bold ;
+	position: relative ;
+	top: -3px ;
+	margin-left: 5px ;
+}
+.windowMenuMain {
+	background: url("appPics/menu.png") ;
+	position: absolute ;
+	top: 27px ;
+	left: 0px ;
+	right: 10px ;
+	height: 22px ;
+}
+.windowMenuRight {
+	background: url("appPics/menuRight.png") ;
+	position: absolute ;
+	top: 27px ;
+	height: 22px ;
+	right: 0px ;
+	width: 10px ;
+}
+.windowMainLeft {
+	background: url("appPics/borderLeft.png") ;
+	position: absolute ;
+	top: 49px ;
+	left: 0px ;
+	bottom: 25px ;
+	width: 5px ;
+}
+.windowMain {
+	background: #fff ;
+	position: absolute ;
+	top: 49px ; 
+	width: 100% ;
+	left: 0px ;
+	bottom: 25px ;
+	background: #e1dcc7 ;
+	border-left: 1px solid #4d4943 ;
+	border-right: 1px solid #4d4943 ;
+	overflow-y: scroll ;
+}
+.windowMainNoResize {
+	overflow-y: hidden ;
+	overflow: hidden ;
+}
+.windowMainRight {
+	background: url("appPics/borderRight.png") ;
+	position: absolute ;
+	top: 49px ;
+	right: 0px ;
+	bottom: 25px ;
+	width: 5px ;
+}
+.windowBottom {
+	background: url("appPics/bottom.png") ;
+	position: absolute ;
+	height: 25px ;
+	right: 16px ;
+	bottom: 0px ;
+	left: 0px ;
+
+}
+.windowBottomRight {
+	background: url("appPics/resizer.png") ;
+	position: absolute ;
+	right: 0px ;
+	bottom: 0px ;
+	height: 25px ;
+	width: 16px ;
+} 
+.windowBottomRightNo {
+	background: url("appPics/resizerNo.png") ;
+	position: absolute ;
+	right: 0px ;
+	bottom: 0px ;
+	height: 25px ;
+	width: 16px ;
+} 
+.windowBottomText {
+	padding-left: 10px ;
+	float: left ;
+	margin: 4px ;
+	font-size: 10px ;
+	height: 20px ;
+	color: #fff ;
+}
+.windowBottomTextLoader {
+	height: 15px ;
+}
+.popupBg {
+	width: 100% ;
+	height: 100% ;
+	position: absolute ;
+	top: 0px ;
+	left: 0px ;
+	z-index: 60000 ;
+	background: #000 ;
+	opacity:0.4;
+	filter:alpha(opacity=40) ;
+}
+.popup {
+	border: 1px solid #000 ;
+	z-index: 60100 ;
+	background: #fff ;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.popup form {
+	padding: 25px ;
+}
+.popUpLabel {
+	font-size: 10px ;
+}
+/*
+ * Meny-kod
+ * 
+ */
+.menuTop {
+	margin: 0px ;
+	margin-left: 10px ;
+	list-style-type:none ;
+	float: left ;
+	padding: 0px ;
+}
+.menuTop li {
+	float: left ;
+	padding: 0px 5px ;
+	
+}
+.menuTop li a {
+	color: #fff ;
+	font-size: 10px ;	
+	text-decoration: none ;
+}
+.menuOut {
+	position: absolute ;
+	display: block ;
+	z-index: 50000 ;
+	border: 1px solid #131312 ;
+	margin: 0px ;
+	padding: 2px 0px ;
+	background: #000 ;
+}
+.menuOut li {
+	list-style-type:none ;
+	margin: 2px 5px ;
+	padding: 0px 5px ;
+	height: 30px ;
+}
+.menuOut li:hover {
+	background: #231913 ;
+}
+.menuOut li a {
+	color: #fff ;
+	font-size: 10px ;	
+	text-decoration: none ;
+}
+.menuOut li a img {
+	position: relative ;
+	border: none ;
+	top: 5px ;
+	margin: 0px 5px 0px 0px ;
+}
+/*
+ * ImageViewer, DUBBE.jawm.app.imageViewer 
+ */
+.imageViewerThumbCont {
+	float: left ;
+	margin: 10px ;
+	border: 1px solid #b3af9e ;
+	background: #c7c2b0 ;
+	padding: 5px ;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.imageViewerThumbCont:hover {
+	background: #b3af9e ;
+}
+.imageViewerThumbImg {
+	border: none ;
+}
+.imageSingleWindowMain {
+	overflow: hidden ;
+}
+/*
+ * Memory
+ */
+.divCont {
+	border: 1px solid #b3af9e ;
+	background: #c7c2b0 ;
+	float: left ;
+	padding: 10px ;
+	margin: 10px ;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.divRow {
+	clear: both ;
+}
+.divBrick {
+	float: left ;
+	margin: 5px ;
+}
+.divBrick img {
+	border: none ;
+}
+.clear {
+	clear: both ;
+}
+.divInfo {
+	border: 1px solid #b3af9e ;
+	background: #c7c2b0 ;
+	float: left ;
+	font-size: 10px ;
+	padding: 10px ;
+	margin: 10px ;
+	-moz-border-radius: 5px;
+	border-radius: 5px ;
+}
+.divHighscore {
+	border: 1px solid #b3af9e ;
+	background: #c7c2b0 ;
+	float: right ;
+	font-size: 10px ;
+	padding: 10px ;
+	margin: 10px ;
+	-moz-border-radius: 5px;
+	border-radius: 5px ;
+}
+
+/*
+ * RssReader
+ */
+.rssFeed h2 {
+	font-size: 10px ;
+	margin: 2px ;
+	padding: 0px 5px ;
+	border-top: 1px solid #b3af9e ;
+	border-bottom: 1px solid #b3af9e ;
+	background: #c7c2b0 ;
+}
+.rssFeed a {
+	font-size: 10px ;
+}
+.rssFeed p {
+	font-size: 10px ;
+}
+
+.formSeconds {
+	width: 25px ;
+}
+.formSource {
+	width: 150px ;
+}
+/**
+ * Chat
+ * 
+ */
+.msgContainer {
+	position: absolute ;
+	width: 100% ;
+	top: 0px ;
+	margin-right: 5px ;
+	bottom: 80px ;
+	overflow-y: scroll ;
+
+}
+.writeMsgContainer {
+	position: absolute ;
+	width: 100% ;
+	height: 60px ; 
+	bottom: 0px ;
+}
+.writeMsgContainer textarea {
+	margin: 5px ;
+	height: 40px ;
+	width: 270px ;
+}
+.writeMsgContainer input {
+}
+.chatMsg {
+	margin-bottom: 20px ;
+
+}
+.chatMsgText {
+	margin: 0px ;
+	font-size: 12px ;
+	padding: 5px ;
+}
+.chatMsgInfo {
+	margin: 2px ;
+	padding: 0px 5px ;
+	border-top: 1px solid #b3af9e ;
+	border-bottom: 1px solid #b3af9e ;
+	background: #c7c2b0 ;
+}
+.chatMsgAlias {
+	margin: 0px ;
+	font-weight: bold ;
+	float: left ;
+	font-size: 11px ;
+} 
+.chatMsgDate {
+	margin: 0px ;
+	float: right ;
+	font-size: 11px ;		
+}
+.clr {
+	clear: both ;
+}
+/**
+ * About
+ * 
+ */
+.aboutText {
+	font-size: 10px ;
+	margin: 10px 10px ;
+}
+.aboutVersionText {
+	font-size: 9px ;
+	margin: 0px 10px ;
+}
+h1 {
+	font-size: 12px ;
+	margin: 5px 10px 0px 10px ;
+}
+ 
